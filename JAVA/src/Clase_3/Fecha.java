@@ -6,18 +6,18 @@ import java.util.Scanner;
 public class Fecha {
     private int dia;
     private int mes;
-    private int año;
+    private int anio;
 
-    public Fecha( int dia, int mes, int año) {
+    public Fecha( int dia, int mes, int anio) {
         this.dia = dia;
         this.mes = mes;
-        this.año = año;
+        this.anio = anio;
     }
 
     public Fecha(){
         this.dia= 12;
         this.mes= 10;
-        this.año= 2007;
+        this.anio= 2007;
     }
 
     public int getDia() {
@@ -26,8 +26,8 @@ public class Fecha {
     public int getMes(){
         return mes;
     }
-    public int getAño(){
-        return año;
+    public int getAnio(){
+        return anio;
     }
 
     public void setDia(int dia) {
@@ -37,8 +37,8 @@ public class Fecha {
         this.mes= mes;
     }
 
-    public void setAño(int año) {
-        this.año = año;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
 
     public void valida(){
@@ -47,12 +47,12 @@ public class Fecha {
         int auxd= e.nextInt();
         System.out.println("Ingrese un mes a verificar");
         int auxm= e.nextInt();
-        System.out.println("Ingrese un año a verificar");
+        System.out.println("Ingrese un anio a verificar");
         int auxa= e.nextInt();
-        if(dia != auxd && mes != auxm && auxa != año){
+        if(dia != auxd && mes != auxm && auxa != anio){
             this.dia= auxd;
             this.mes= auxm;
-            this.año= auxa;
+            this.anio= auxa;
         }
     }
     public void diaMes(int mes) {
@@ -69,16 +69,16 @@ public class Fecha {
         int noviembre = 11;
         int diciembre = 12;
         Scanner e = new Scanner(System.in);
-        System.out.println("Ingrese un mes del año ");
+        System.out.println("Ingrese un mes del anio ");
         int mesesito = e.nextInt();
-        System.out.println("Ingrese el año ");
-        int añito= e.nextInt();
+        System.out.println("Ingrese el anio ");
+        int anioto= e.nextInt();
         switch (mes) {
             case 1:
                 System.out.println("31");
                 break;
             case 2:
-                if (añito % 4 == 0 && añito % 400 == 0) {
+                if (anioto % 4 == 0 && anioto % 400 == 0) {
                     System.out.println("29");
                 }
                 else {
@@ -127,11 +127,11 @@ public class Fecha {
 
         System.out.println(f1.getDia());
         System.out.println(f1.getMes());
-        System.out.println(f1.getAño());
-        System.out.println(f1.diaMes(4));
+        System.out.println(f1.getAnio());
+        f1.diaMes(4);
         System.out.println(f2.getDia());
         System.out.println(f2.getMes());
-        System.out.println(f2.getAño());
-        System.out.println(f2.diaMes(10));
+        System.out.println(f2.getAnio());
+        f2.diaMes(10);
     }
 }

@@ -1,5 +1,4 @@
-package Clase_4;
-import java.util.Scanner;
+package Arrays;
 import Clase_2.Persona;
 import Clase_3.Fecha;
 import java.time.LocalDate;
