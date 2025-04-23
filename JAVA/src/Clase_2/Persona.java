@@ -11,6 +11,12 @@ public class Persona {
         this.direccion = "Av Mosconi 7000";
     }
 
+    public Persona(String nombre) {
+        this.nombre = nombre;
+        this.edad = 20;
+        this.direccion = "av constituyentes 1213";
+    }
+
     public Persona(String nombre, int edad, String direccion) {
         this.nombre = nombre;
         this.edad = edad;

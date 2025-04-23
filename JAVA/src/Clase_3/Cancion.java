@@ -1,5 +1,7 @@
 package Clase_3;
 
+import Clase_2.Persona;
+
 public class Cancion {
 
     // Atributos
@@ -16,6 +18,9 @@ public class Cancion {
     public Cancion(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
+    }
+
+    public Cancion(String nombre, Persona autor) {
     }
 
     // Getter para título
