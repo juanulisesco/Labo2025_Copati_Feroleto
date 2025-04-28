@@ -71,12 +71,11 @@ public class CD {
         Scanner e = new Scanner(System.in);
         System.out.println("Ingrese un numero de la playlist y muestra la cancion: ");
         int i = posicion - 1;
+        canciones.set(posicion, nuevaCancion);
     }
 
-    public void agrega(Cancion canciones){
-        String nombre = "";
-        String autor = "";
-        this.canciones.add(new Cancion(nombre,autor));
+    public void agrega(Cancion cancion){
+        this.canciones.add(cancion);
     }
 
     public void elimina(int posicion){
@@ -91,19 +90,21 @@ public class CD {
     public static void main(String[] args) {
         CD c1 = new CD();
         CD c2 = new CD();
+        Cancion nuevaCancion= new Cancion("Un x100to","Grupo frontera y Bad bunny");
+        Cancion cancion= new Cancion("baila como el papu","papu gomez");
         Scanner e = new Scanner(System.in);
         c1.cant_Canciones();
         c2.cant_Canciones();
         c1.verCancion(1);
         c2.verCancion(2);
-        c1.grabaCancion(3, ("Baby" "Justin Bieber", ));
-        c2.grabaCancion(4, );
+        c1.grabaCancion(3, nuevaCancion);
+        c2.grabaCancion(4, nuevaCancion);
         System.out.println("Ingrese la cancion que desea incrustar:                                                                                                                                                                   ");
         String nombre= e.nextLine();
         System.out.println("Ingrese el nombre de el artista que compuso la cancion: ");
         String autor= e.nextLine();
-        c1.agrega();
-        c2.agrega();
+        c1.agrega(cancion);
+        c2.agrega(new Cancion("baila sin el papu","damian gomez"));
         c1.elimina(5);
         c2.elimina(6);
     }
