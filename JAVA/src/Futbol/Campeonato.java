@@ -9,7 +9,7 @@ public class Campeonato {
 
     public void division() {
         this.equipos = new ArrayList<>();
-        ArrayList<Partido> turnoM = new ArrayList<>();
+        ArrayList<Equipo> turnoM = new ArrayList<>();
         ArrayList<Partido> turnoT = new ArrayList<>();
         ArrayList<Partido> turnoN = new ArrayList<>();
         for(int i = 0; i< equipos.size(); i++) {
@@ -27,7 +27,9 @@ public class Campeonato {
         }
         for(int turno=0; turno<3; turno++){
             for(int i= 0; i<equipos.size()-1; i++){
-                for()
+                for(int w= 0; w<equipos.size()-1; w++){
+
+                }
             }
         }
     }
