@@ -1,13 +1,15 @@
 package Arrays;
+import Clase_3.Cancion;
 import Clase_3.Fecha;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.time.LocalDate;
 
 public class Alumno {
     private String nombre;
     private String apellido;
     private Fecha fechaNacimiento;
-    private ArrayList <Materia> materias;
+    private ArrayList <Materias> materias;
     private ArrayList<Integer> listaDeNotas;
 
     public Alumno(){
@@ -61,11 +63,11 @@ public class Alumno {
     }
 
 
-    public ArrayList<Materia> getMaterias() {
+    public ArrayList<Materias> getMaterias() {
         return materias;
     }
 
-    public void setMaterias(ArrayList<Materia> materias) {
+    public void setMaterias(ArrayList<Materias> materias) {
         this.materias = materias;
     }
 
@@ -92,7 +94,7 @@ public class Alumno {
         return mayor;
     }
 
-    public void agregaMateria(Materia materia){
+    public void agregaMateria(Materias materia){
         this.materias.add(materia);
         materia.agregarAlumno(this);
 
