@@ -1,21 +1,16 @@
-package Arrays;
-import Clase_3.Cancion;
+package Colegio;
+import Clase_2.Persona;
 import Clase_3.Fecha;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.time.LocalDate;
 
-public class Alumno {
-    private String nombre;
-    private String apellido;
-    private Fecha fechaNacimiento;
-    private ArrayList <Materias> materias;
+public class Alumno extends Persona {
+
+    private ArrayList <Materia> materias;
     private ArrayList<Integer> listaDeNotas;
 
     public Alumno(){
-        this.nombre= "María" ;
-        this.apellido= "Santa" ;
-        this.fechaNacimiento= new Fecha(10, 10, 2020);
+        super();
         ArrayList<Integer> listaDeNotas = new ArrayList<>();
         Integer nota1= new Integer(10);
         Integer nota2= new Integer(6);
@@ -24,54 +19,36 @@ public class Alumno {
         listaDeNotas.add(nota2);
         listaDeNotas.add(nota3);
     }
+
     public Alumno(String nombre, String apellido, Fecha fechaNacimiento){
-        this.nombre= nombre ;
-        this.apellido= apellido ;
-        this.fechaNacimiento= fechaNacimiento ;
-        }
 
-    public String getNombre() {
-        return nombre;
-    }
+        super(nombre, apellido, fechaNacimiento);
 
-    public void setNombre(String nombre){
-        this.nombre= nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public Fecha getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Fecha fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
     }
 
     public ArrayList<Integer> getListaDeNotas() {
+
         return listaDeNotas;
     }
 
     public void setListaDeNotas(ArrayList<Integer> listaDeNotas) {
+
         this.listaDeNotas = listaDeNotas;
     }
 
 
-    public ArrayList<Materias> getMaterias() {
+    public ArrayList<Materia> getMaterias() {
+
         return materias;
     }
 
-    public void setMaterias(ArrayList<Materias> materias) {
+    public void setMaterias(ArrayList<Materia> materias) {
+
         this.materias = materias;
     }
 
     public Integer menorNota(){
+
         Integer menor= listaDeNotas.get(1);
         for (int i =0; i < listaDeNotas.size(); i++){
             if(menor >= listaDeNotas.get(i)){
@@ -82,9 +59,11 @@ public class Alumno {
     }
 
     public void agregarNota(Integer aux){
+
         listaDeNotas.add(aux);
     }
     public Integer mayorNota(){
+
         Integer mayor= listaDeNotas.get(1);
         for (int i =0; i < listaDeNotas.size(); i++){
             if(mayor >= listaDeNotas.get(i)){
@@ -94,24 +73,26 @@ public class Alumno {
         return mayor;
     }
 
-    public void agregaMateria(Materias materia){
+    public void agregaMateria(Materia materia){
+
         this.materias.add(materia);
         materia.agregarAlumno(this);
-
-
     }
 
     public int obtenerEdad(Fecha fechaNacimiento){
+
         return LocalDate.now().getYear() - fechaNacimiento.getAnio();
     }
 
     public static void main(String[] args) {
+
         Alumno a1= new Alumno();
         Fecha f1= new Fecha( 1, 2, 2010);
-        Alumno a2= new Alumno("Uli", "Copati", f1  );
+        Alumno a2= new Alumno("Uli", "Copati", f1);
         a1.agregarNota(10);
         a1.menorNota();
         a1.mayorNota();
+
     }
 }
 

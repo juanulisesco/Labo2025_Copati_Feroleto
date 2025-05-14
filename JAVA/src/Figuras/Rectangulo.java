@@ -1,6 +1,6 @@
-package Clase_2;
+package Figuras;
 
-public class Rectangulo {
+public class Rectangulo extends Figura {
     private double base;
     private double altura;
 
@@ -19,25 +19,28 @@ public class Rectangulo {
     }
 
     public void setBase(double base) {
+
         this.base = base;
     }
 
     public double getAltura() {
+
         return this.altura;
     }
 
     public void setAltura(double altura) {
-        this.altura = altura;
-    }
 
-    public double area() {
-        double area = this.base * this.altura;
-        return area;
+        this.altura = altura;
     }
 
     public double perimetro() {
         double perimetro = 2 * this.base + 2 * this.altura;
         return perimetro;
+    }
+
+    public double area() {
+        double area = this.base * this.altura;
+        return area;
     }
 
     public static void main(String[] args) {

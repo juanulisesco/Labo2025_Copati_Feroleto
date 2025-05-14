@@ -1,5 +1,4 @@
-package Arrays;
-import Clase_3.Cancion;
+package Musica;
 import Clase_2.Persona;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -19,7 +18,7 @@ public class CD {
         canciones.add(tema1);
         canciones.add(tema2);
         canciones.add(tema3);
-        this.autor = new Persona("Juan", 20, "El paseo de tucuman 1245");
+        this.autor = new Persona("Juan", 20,"El paseo de tucuman 1245");
     }
 
     public String getTituloCD() {

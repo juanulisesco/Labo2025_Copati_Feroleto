@@ -1,4 +1,5 @@
-package Arrays;
+package Colegio;
+
 import java.util.ArrayList;
 
 public class Materia {
