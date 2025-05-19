@@ -17,8 +17,10 @@ public class Persona {
         this.direccion = "Av Mosconi 7000";
     }
 
-    public Persona(String nombre, int edad,  ) {
+    public Persona(String nombre, int edad, String apellido ) {
         this.nombre = nombre;
+        this.edad= edad;
+        this.apellido= apellido;
     }
 
     public Persona(String nombre, int edad, String apellido,
