@@ -1,6 +1,8 @@
-package Colegio;
+package Sistema_de_almuerzos;
 import Clase_2.Persona;
 import Clase_3.Fecha;
+import Colegio.Materia;
+
 import java.util.ArrayList;
 import java.time.LocalDate;
 
@@ -8,6 +10,7 @@ public class Alumno extends Persona {
 
     private ArrayList <Materia> materias;
     private ArrayList<Integer> listaDeNotas;
+    private int division;
 
     public Alumno(){
         super();
@@ -18,6 +21,11 @@ public class Alumno extends Persona {
         listaDeNotas.add(nota1);
         listaDeNotas.add(nota2);
         listaDeNotas.add(nota3);
+        this.division= 3;
+    }
+
+    public Alumno (int division){
+        this.division= division;
     }
 
     public Alumno(String nombre, String apellido, Fecha fechaNacimiento){
@@ -45,6 +53,16 @@ public class Alumno extends Persona {
     public void setMaterias(ArrayList<Materia> materias) {
 
         this.materias = materias;
+    }
+
+    public int getDivision() {
+
+        return division;
+    }
+
+    public void setDivision(int division) {
+
+        this.division = division;
     }
 
     public Integer menorNota(){

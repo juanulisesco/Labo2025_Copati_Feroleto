@@ -1,5 +1,7 @@
 package Colegio;
 
+import Sistema_de_almuerzos.Alumno;
+
 import java.util.ArrayList;
 
 public class Materia {

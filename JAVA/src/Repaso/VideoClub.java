@@ -59,15 +59,16 @@ public class VideoClub {
     }
 
     //a)//modificar estanterias
-    public void modE (Estanteria estanteria){
+    public void modE (Estanteria estanteria) {
         int aux = 0;
-        for (int i=0; i < estanterias.size();i++){
-            if(estanteria.equals(estanterias.get(i))){
-                aux=i;
+        for (int i = 0; i < estanterias.size(); i++) {
+            if (estanteria.equals(estanterias.get(i))) {
+                aux = i;
             }
         }
-        this.estanterias.set(aux,estanteria);
+        this.estanterias.set(aux, estanteria);
     }
+
     public void masEstanteria(){
         Estanteria aux= new Estanteria();
         int aux1 = 0;
