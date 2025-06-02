@@ -52,5 +52,17 @@ public class Dispositivo {
     public void setAñoAdquisicion(Fecha añoAdquisicion) {
         this.añoAdquisicion = añoAdquisicion;
     }
+
+    public boolean estaActivo(boolean estado){
+        if (isEstado()){
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public void tomarMedidas(){
+
+    }
 }
 
