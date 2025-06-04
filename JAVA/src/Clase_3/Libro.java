@@ -1,6 +1,7 @@
-package Arrays;
+package Clase_3;
 import Clase_2.Persona;
-import Clase_3.Fecha;
+import Unidad_4.Editoriales.Editorial;
+
 import java.time.LocalDate;
 
 public class Libro {
@@ -9,10 +10,10 @@ public class Libro {
     private Persona autor;
     private int isbn;
     private int paginas;
-    private String editorial;
+    private Editorial editorial;
     private Fecha fechaPublicacion;
 
-    public Libro(String titulo, Persona autor, int isbn, int paginas, String editorial,
+    public Libro(String titulo, Persona autor, int isbn, int paginas, Editorial editorial,
                  Fecha fechaPublicacion) {
         this.titulo = titulo;
         this.autor = autor;
@@ -33,7 +34,7 @@ public class Libro {
                 "Alabama, Estados Unidos")  ;
         this.isbn = 2 ;
         this.paginas = 75 ;
-        this.editorial = "Casa del libro" ;
+        this.editorial = Editorial.ALIANZA;
         this.fechaPublicacion = new Fecha(11, 7,1960);
     }
 
@@ -69,18 +70,22 @@ public class Libro {
         this.paginas = paginas;
     }
 
-    public String getEditorial() {
+    public Editorial getEditorial() {
+
         return editorial;
     }
 
-    public void setEditorial(String editorial) {
+    public void setEditorial(Editorial editorial) {
+
         this.editorial = editorial;
     }
 
     public Fecha getFechaPublicacion() {
+
         return fechaPublicacion;
     }
     public void setFechaPublicacion(Fecha fechaPublicacion) {
+
         this.fechaPublicacion = fechaPublicacion;
     }
 
@@ -113,8 +118,9 @@ public class Libro {
                 "Nuevo Hampshire, Estados Unidos");
         Persona p2= new Persona(" George Orwell", 46,
                 "Motihari, India");
+        Editorial e1;
         Fecha f1 = new Fecha(11, 7,1960);
-        Libro libro1= new Libro("El Código Da Vinci", p1, 1, 56, "Umbriel Editores", f1);
+        Libro libro1= new Libro("El Código Da Vinci", p1,1, 56, Editorial.ALIANZA,  f1);
         Libro libro2 = new Libro("1984", p2 );
 
         libro1.mostrarInformacion();

@@ -1,7 +1,5 @@
-package Arrays;
-
+package Clase_3;
 import java.util.Scanner;
-
 public class Cafetera {
     private int cantidadMaxima;
     private int cantidadActual;
@@ -63,7 +61,6 @@ public class Cafetera {
         if (this.cantidadActual >= capacidadTaza) {
             System.out.println("Servimos café a la taza");
             this.cantidadActual = this.cantidadActual - capacidadTaza;
-
         } else {
             System.out.println("No alcanza el café de la cafetera para llenar la taza, " +
                     "servimos esto:" + this.cantidadActual);
@@ -144,5 +141,5 @@ public class Cafetera {
         capa.close();
 
     }
-
 }
+

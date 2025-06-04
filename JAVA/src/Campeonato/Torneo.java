@@ -1,5 +1,7 @@
 package Campeonato;
 import Clase_3.Fecha;
+import Unidad_4.Turnos.Turno;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -39,7 +41,7 @@ public class Torneo {
         this.fechaHoy = fechaHoy;
     }
 
-    public void generarP(Equipo equipo1, Equipo equipo2, char disponibilidad){
+    public void generarP(Equipo equipo1, Equipo equipo2, Turno disponibilidad){
         Partido partido = new Partido(this.fechaHoy, disponibilidad, equipo1, equipo2);
         promedio.add(partido);
     }
@@ -63,12 +65,12 @@ public class Torneo {
             System.out.println("Falta llenar equipos");
         } else {
             for (Equipo equipo : listaEquipos) {
-                char disponibilidad = equipo.getDisponibilidad();
-                if (disponibilidad == 'M') {
+                Turno disponibilidad = equipo.getDisponibilidad();
+                if (disponibilidad == Turno.MANIANA) {
                     manana.add(equipo);
-                } else if (disponibilidad == 'T') {
+                } else if (disponibilidad == Turno.TARDE) {
                     tarde.add(equipo);
-                } else if (disponibilidad == 'N') {
+                } else if (disponibilidad == Turno.NOCHE) {
                     noche.add(equipo);
                 }
             }
@@ -108,27 +110,27 @@ public class Torneo {
         Collections.addAll(J1,j1,j2,j3,j4,j5,j6,j7,j8,j9,j10,j11);
 
         Equipo e1 = new Equipo("Atlético Belgrano", "Belgrano", J1,
-                'M');
+                Turno.MANIANA);
         Equipo e2 = new Equipo("Defensores de Palermo", "Palermo", J1,
-                'T');
+                Turno.TARDE);
         Equipo e3 = new Equipo("Los Tigres de Flores", "Flores", J1,
-                'N');
+                Turno.NOCHE);
         Equipo e4 = new Equipo("San Martín FC", "Villa Urquiza", J1,
-                'M');
+                Turno.MANIANA);
         Equipo e5 = new Equipo("Huracán del Sur", "Parque Patricios", J1,
-                'T');
+                Turno.TARDE);
         Equipo e6 = new Equipo("Villa Real United", "Villa Real", J1,
-                'N');
+                Turno.NOCHE);
         Equipo e7 = new Equipo("Estrella de Caballito", "Caballito", J1,
-                'M');
+                Turno.MANIANA);
         Equipo e8 = new Equipo("Racing Juniors", "Avellaneda", J1,
-                'T');
+                Turno.TARDE);
         Equipo e9 = new Equipo("Boedo City", "Boedo", J1,
-                'N');
+                Turno.NOCHE);
         Equipo e10 = new Equipo("La Banda de Colegiales", "Colegiales", J1,
-                'M');
+                Turno.MANIANA);
         Equipo e11 = new Equipo("Nueva Chicago Boys", "Mataderos", J1,
-                'T');
+                Turno.TARDE);
 
         Collections.addAll(t1.listaEquipos, e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11);
         t1.promediosE();

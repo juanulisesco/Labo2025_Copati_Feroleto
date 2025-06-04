@@ -1,4 +1,6 @@
 package Campeonato;
+import Unidad_4.Turnos.Turno;
+
 import java.util.ArrayList;
 
 public class Equipo {
@@ -6,17 +8,17 @@ public class Equipo {
     private String nombre;
     private String barrioProcedencia;
     private ArrayList<Jugador> jugadores;
-    private char disponibilidad;
+    private Turno disponibilidad;
 
     public Equipo() {
         this.nombre="Milano";
         this.barrioProcedencia="Villa Pueyrredon";
         this.jugadores=new ArrayList<>();
-        this.disponibilidad='M';
+        this.disponibilidad= Turno.MANIANA;
     }
 
     public Equipo(String nombre, String barrioProcedencia, ArrayList<Jugador> jugadores,
-                  char disponibilidad) {
+                  Turno disponibilidad) {
         this.nombre = nombre;
         this.barrioProcedencia = barrioProcedencia;
         this.jugadores = jugadores;
@@ -47,11 +49,11 @@ public class Equipo {
         this.jugadores = jugadores;
     }
 
-    public char getDisponibilidad() {
+    public Turno getDisponibilidad() {
         return disponibilidad;
     }
 
-    public void setDisponibilidad(char disponibilidad) {
+    public void setDisponibilidad(Turno disponibilidad) {
         this.disponibilidad = disponibilidad;
     }
 }

@@ -1,21 +1,23 @@
 package Campeonato;
 import Clase_3.Fecha;
+import Unidad_4.Turnos.Turno;
+
 import java.time.LocalDate;
 
 public class Partido {
     private LocalDate fechaPartido;
-    private char turno;
+    private Turno turno;
     private Equipo local;
     private Equipo visitante;
 
     public Partido(){
         this.fechaPartido=LocalDate.now();
-        this.turno='M';
+        this.turno= Turno.MANIANA;
         this.local=new Equipo();
         this.visitante=new Equipo();
     }
 
-    public Partido(LocalDate fechaPartido, char turno, Equipo local,
+    public Partido(LocalDate fechaPartido, Turno turno, Equipo local,
                    Equipo visitante) {
         this.fechaPartido = fechaPartido;
         this.turno = turno;
@@ -31,11 +33,11 @@ public class Partido {
         this.fechaPartido = fechaPartido;
     }
 
-    public char getTurno() {
+    public Turno getTurno() {
         return turno;
     }
 
-    public void setTurno(char turno) {
+    public void setTurno(Turno turno) {
         this.turno = turno;
     }
 
