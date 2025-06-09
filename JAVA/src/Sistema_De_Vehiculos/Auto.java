@@ -1,11 +1,14 @@
 package Sistema_De_Vehiculos;
+import Unidad_4.Ruedas.Rueda;
+import Unidad_4.Colores_Codigos.Color;
 
-public class Auto extends  Motorizados{
+public class Auto extends Motorizados{
     private boolean descapotable;
 
-    public Auto(boolean descapotable, String patente, String marca, String modelo, String color, int cantidadeRuedas, int aniooFabricación){
-        super(patente, marca,  modelo,  color,  cantidadeRuedas,  aniooFabricación);
-        this.descapotable= descapotable;
+    public Auto(String patente, String marca, String modelo, Color color, Rueda cantidadeRuedas,
+                int aniooFabricación, boolean descapotable) {
+        super(patente, marca, modelo, color, cantidadeRuedas, aniooFabricación);
+        this.descapotable = descapotable;
     }
 
     public boolean getDescapotable() {

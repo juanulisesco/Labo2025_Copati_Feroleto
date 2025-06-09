@@ -1,13 +1,14 @@
 package Alarmas_de_edificio;
 import Clase_3.Fecha;
+import Unidad_4.Estado.Estados;;
 
 public class Dispositivo {
-    private boolean estado;
+    private Estados estado;
     private double medida;
     private double umbralI ;
     private Fecha añoAdquisicion;
 
-    public Dispositivo(boolean estado, double medida, double umbralI , Fecha añoAdquisicion){
+    public Dispositivo(Estados estado, double medida, double umbralI , Fecha añoAdquisicion){
         this.estado= estado;
         this.medida=medida;
         this.umbralI=umbralI;
@@ -15,13 +16,13 @@ public class Dispositivo {
     }
 
     public Dispositivo(){
-        this.estado= true ;
+        this.estado=estado  ;
         this.medida= 4.2;
         this.umbralI= 2.1;
         this.añoAdquisicion= new Fecha(12, 10,2007);
     }
 
-    public boolean isEstado() {
+    public Estados isEstado() {
         return estado;
     }
 
@@ -37,7 +38,7 @@ public class Dispositivo {
         return añoAdquisicion;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(Estados estado) {
         this.estado = estado;
     }
 
@@ -53,16 +54,5 @@ public class Dispositivo {
         this.añoAdquisicion = añoAdquisicion;
     }
 
-    public boolean estaActivo(boolean estado){
-        if (isEstado()){
-            return true;
-        }
-        else
-            return false;
-    }
-
-    public void tomarMedidas(){
-
-    }
 }
 

@@ -1,22 +1,24 @@
 package Sistema_de_llamadas;
 import Clase_3.Fecha;
-public class Llamadas {
+public class Llamada {
     private Empleado empleado1;
     private Empleado empleado2;
     private boolean exterior;
     private int duracion;
     private Fecha fecha;
 
-    public Llamadas(Empleado empleado1, Empleado empleado2, boolean exterior, int duracion, Fecha fecha) {
-        this.empleado1 = empleado1;
-        this.empleado2 = empleado2;
-        if (empleado1.getPais() != empleado2.getPais()) {
-            this.exterior = true;
-        } else {
-            this.exterior = false;
+    public Llamada(Empleado empleado1, Empleado empleado2, boolean exterior,
+                   int duracion, Fecha fecha){
+        this.empleado1= empleado1;
+        this.empleado2= empleado2;
+        if(empleado1.getPais() != empleado2.getPais()){
+            this.exterior= true;
         }
-        this.duracion = duracion;
-        this.fecha = fecha;
+        else{
+            this.exterior= false;
+        }
+        this.duracion= duracion;
+        this.fecha=fecha;
     }
 
     public Empleado getEmpleado1() {

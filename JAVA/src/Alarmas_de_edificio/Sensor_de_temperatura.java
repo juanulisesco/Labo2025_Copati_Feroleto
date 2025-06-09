@@ -1,15 +1,14 @@
 package Alarmas_de_edificio;
 
-import java.util.Scanner;
+import Clase_3.Fecha;
+import Unidad_4.Estado.Estados;
 
-public class Sensor_de_temperatura extends Sensor_Compuesto{
-    public Sensor_de_temperatura(){
-        super();
+public class Sensor_de_temperatura extends Dispositivo {
+    public Sensor_de_temperatura(Estados estado, double medida, double umbralInicial, Fecha añoAdquisicion) {
+        super(estado, medida, umbralInicial, añoAdquisicion);
     }
-    public void tomarMedida(int medida){
-        double e;
-        System.out.println("¿Cúal es la temperatura actual?");
-        double tempActual =  ;
-
+    @Override
+    public void dispara(){
+        System.out.println("¡Cuidado! La temperatura sube");
     }
 }

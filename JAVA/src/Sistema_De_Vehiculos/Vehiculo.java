@@ -1,13 +1,15 @@
 package Sistema_De_Vehiculos;
+import Unidad_4.Ruedas.Rueda;
+import Unidad_4.Colores_Codigos.Color;
 
-public class Vehiculo extends Sistema{
+public class Vehiculo extends Empresa_De_Autos{
     private String marca;
     private String modelo;
-    private String color;
-    private int cantidadRuedas;
+    private Color color;
+    private Rueda cantidadRuedas;
     private int aniooFabricación;
 
-    public Vehiculo(String marca, String modelo, String color, int cantidadeRuedas, int aniooFabricación){
+    public Vehiculo(String marca, String modelo, Color color, Rueda cantidadeRuedas, int aniooFabricación){
         this.marca= marca;
         this.modelo= modelo;
         this.color= color;
@@ -19,11 +21,11 @@ public class Vehiculo extends Sistema{
         return aniooFabricación;
     }
 
-    public int getCantidadRuedas() {
+    public Rueda getCantidadRuedas() {
         return cantidadRuedas;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -39,11 +41,11 @@ public class Vehiculo extends Sistema{
         this.aniooFabricación = aniooFabricación;
     }
 
-    public void setCantidadRuedas(int cantidadRuedas) {
+    public void setCantidadRuedas(Rueda cantidadRuedas) {
         this.cantidadRuedas = cantidadRuedas;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
