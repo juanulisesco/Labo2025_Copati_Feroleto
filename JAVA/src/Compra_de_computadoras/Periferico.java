@@ -1,13 +1,13 @@
 package Compra_de_computadoras;
 import java.util.ArrayList;
-public class Perisferico extends Componente {
+public class Periferico extends Componente {
     private ArrayList<String> puertos;
-    public Perisferico(String fabricante, String modelo, double precioBase, int stock
-            ,ArrayList<String> puertos) {
+    public Periferico(String fabricante, String modelo, double precioBase, int stock
+            , ArrayList<String> puertos) {
         super(fabricante, modelo, precioBase, stock);
         this.puertos = puertos;
     }
-    public Perisferico() {
+    public Periferico() {
         super();
         this.puertos = new ArrayList<>();
     }

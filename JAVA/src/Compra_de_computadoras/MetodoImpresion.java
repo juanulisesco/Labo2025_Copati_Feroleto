@@ -1,5 +1,6 @@
 package Compra_de_computadoras;
 import java.util.ArrayList;
+
 public class MetodoImpresion {
     private String tipoImpresion;
 

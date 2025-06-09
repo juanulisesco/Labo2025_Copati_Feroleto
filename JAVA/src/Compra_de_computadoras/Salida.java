@@ -6,6 +6,7 @@ public class Salida extends Periferico{
         super(fabricante, modelo, precioBase, stock, puertos);
     }
     public Salida() {
+
         super();
     }
 }

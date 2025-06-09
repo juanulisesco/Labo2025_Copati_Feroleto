@@ -8,7 +8,7 @@ public class Sensor_de_presion extends Dispositivo {
     public Sensor_de_presion(Estados estado, double medida, double umbralInicial, Fecha añoAdquisicion) {
         super(estado, medida, umbralInicial, añoAdquisicion);
     }
-    @Override
+
     public void dispara(){
         System.out.println("Sensor de presión activado");
     }

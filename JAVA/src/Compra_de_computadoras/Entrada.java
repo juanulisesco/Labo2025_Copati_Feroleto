@@ -1,7 +1,7 @@
-import Compra_de_computadoras.Perisferico;
+package Compra_de_computadoras;
 import java.util.ArrayList;
 
-public class Entrada extends Perisferico {
+public class Entrada extends Periferico {
     private ArrayList<String> conectores;
 
     public Entrada(String fabricante, String modelo, double precioBase, int stock,
