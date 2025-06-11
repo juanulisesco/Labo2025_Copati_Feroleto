@@ -5,8 +5,8 @@ public class Sonido extends Producto{
 
 
     public Sonido(boolean integrado, String nombre, int stock, int precio ) {
-        this.integrado = integrado;
         super(nombre, stock, precio);
+        this.integrado = integrado;
     }
 
     public void setIntegrado(boolean integrado) {

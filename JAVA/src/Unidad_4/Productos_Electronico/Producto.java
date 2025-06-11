@@ -6,8 +6,11 @@ public class Producto {
     private int stock;
     private Seccion secion;
 
-
-
+    public Producto(String nombre, int precio, int stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
 
     public void producto(){
         this.secion=Seccion.MULTIMEDEA;

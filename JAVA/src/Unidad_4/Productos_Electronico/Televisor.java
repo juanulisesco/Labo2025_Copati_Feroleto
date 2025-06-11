@@ -4,9 +4,9 @@ public class Televisor extends Producto{
     private Resolucion resolucion;
     private int pixeles;
 
-    public Televisor(Resolucion resolucion) {
-        this.resolucion = resolucion;
+    public Televisor(String nombre, int precio, int stock, Resolucion resolucion) {
         super(nombre, stock, precio);
+        this.resolucion = resolucion;
 
     }
 
