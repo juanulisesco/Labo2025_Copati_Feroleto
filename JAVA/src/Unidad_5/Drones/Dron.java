@@ -93,5 +93,9 @@ public class Dron {
         }
         System.out.println("Se recargaron las baterias!!!!!!!!");
     }
+
+    public static void main(String[] args) {
+
+    }
 }
 

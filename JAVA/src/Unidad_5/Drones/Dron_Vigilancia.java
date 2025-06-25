@@ -9,4 +9,12 @@ public class Dron_Vigilancia extends Dron{
         super(modelo, adquisicion, estado, bateria, contador);
         this.memoria = memoria;
     }
+
+    public int getMemoria() {
+        return memoria;
+    }
+
+    public void setMemoria(int memoria) {
+        this.memoria = memoria;
+    }
 }
