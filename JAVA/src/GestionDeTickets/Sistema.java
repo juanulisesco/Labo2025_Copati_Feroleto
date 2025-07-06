@@ -55,7 +55,7 @@ public class Sistema {
         int idF= 0;
         LocalDate fecha = LocalDate.now();
         for(Ticket ticket : tikets){
-            if(ticket.getEstado().equals(Estado.ABIERTO)){
+            if(ticket.getEstado().isBefore(Estado.ABIERTO)){
                 if (ticket.getFechaC().equals(fecha)){
                     fecha = ticket.getFechaC();
                     idF= ticket.getId();
