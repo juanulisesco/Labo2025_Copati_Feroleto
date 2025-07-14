@@ -1,0 +1,53 @@
+/* Logo */
+.LogoHeader {
+    width: 60px;
+    border-radius: 10px;
+  }
+  
+  /* Hover en productos */
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+
+  }
+  .busc{
+    border-color: rgb(213, 241, 213);
+  }
+
+  .btn-success{
+    margin: 10px;
+    
+  }
+  .btn-success:hover{
+    background-color: white;
+    color: #198574;
+  }
+
+  .btn-outline-success{
+    border-color: rgb(0, 94, 0);
+    color: rgb(0, 94, 0);
+  }
+
+  .btn-outline-success:hover{
+    background-color: rgb(0, 94, 0);
+  }
+
+  footer{
+    background-color: #082200;
+  }
+
+  footer h6 {
+  margin-bottom: 1rem;
+}
+
+footer a:hover {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+  
