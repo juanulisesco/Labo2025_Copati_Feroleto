@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hierbas felices</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Index/style.css">
+  <link rel="shortcut icon" href="../Imagen/Logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- ------------------------------------------Navbar------------------------------------------- -->
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a href="../Index/index.html"><img src="../Imagen/Logo.jpg" class="LogoHeader" alt="Logo marca" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="../SobreNosotros/SobreNosotros.html">Sobre nosotros</a></li>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+              <div class="dropdown-menu w-100 mt-0 p-4 border-0" >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h6>Plantas</h6>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Interior</a>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Exterior</a>
+                    </div>
+                    <div class="col-md-3">
+                      <h6>Extras</h6>
+                      <a class="dropdown-item" href="../Macetas/Maceta.html">Macetas</a>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Herramientas</a>
+                    </div>
+                    <div class="col-md-3">
+                      <h6>Semillas</h6>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Hortalizas</a>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Tubérculos</a>
+                    </div>
+                    <div class="col-md-3">
+                      <h6>Cuidado plantas</h6>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Herbicidas</a>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Insecticidas</a>
+                      <a class="dropdown-item" href="../Plantas/Plantas.html">Fertilizantes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../CuidadoPlantas/CuidadoPlantas.html">Cuidado plantas</a></li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" />
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+          <div class="d-flex ms-3">
+            <a href="../Signup/signup.html"><button href="../Signup/signup.html" type="button" class="btn btn-success">Sign up</button></a>
+            <a href="../Login/login.html"><button href="../Login/login.html" type="button" class="btn btn-success">Log in</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- ------------------------------------------Navbar------------------------------------------- -->
+</header>
+
+<main>
+  <div class="container text-center">
+      <div class="row align-items-center">
+<!-- ------------------------------------------Carousel------------------------------------------- -->
+            <div class="col">
+              <div class="container text-center">
+                  <div class="row justify-content-center">
+                      <div id="carouselExampleIndicators" class="carousel slide" >
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../Imagen/Carousel/Carousel2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Imagen/Carousel/Carousel5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Imagen/Carousel/Carousel3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+<!-- ------------------------------------------Carousel------------------------------------------- -->
+      
+<!-- ------------------------------------------Productos------------------------------------------- -->
+            <section class="container my-5">
+    <h2 class="text-center mb-4"> Algunos de nuestros productos</h2>
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Conejito.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Conejito</h5>
+        <p class="card-text">Ideal para interior, muy vistoso y estetico.</p>
+      </div>
+    </div>
+  </a>
+</div> 
+      <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Dolar.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+            <h5 class="card-title">Dolar</h5>
+            <p class="card-text">Tienen forma de espátula, lo que la hace muy corpulentas visualmente.</p>
+      </div>
+    </div>
+  </a>
+</div>
+      <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/NuestrosProductos2/Tierra Abonada Loma Verde.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Tierra Abonada Loma Verde</h5>
+            <p class="card-text">Se utiliza en la plantación plantines, arbustos y arboles.</p>
+      </div>
+    </div>
+  </a>
+</div>
+      <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Crasas.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+         <h5 class="card-title">Crasas</h5>
+        <p class="card-text"> Son plantas resistentes, almacenan agua en sus hojas, tallos o raíces.</p>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Geranio.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+         <h5 class="card-title">Geranio</h5>
+        <p class="card-text">Resiste muy bien además, sus flores se encargan de decorar y alegrar el ambiente.</p>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/NuestrosProductos2/Set Pothus Eio + Maceta Roma chapa.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Set Pothus Eio + Maceta Roma chapa</h5>
+        <p class="card-text">Verde clásico y un diseño industrial, perfecto para estantes o escritorios.</p>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/NuestrosProductos2/Combo sustratos para interior.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Combo sustratos para interior</h5>
+        <p class="card-text">Está pensado para mejorar el suelo, aportar nutrientes y embellece la superficie.</p>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/NuestrosProductos2/Combo sustratos para exterior.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Combo sustratos para exterior</h5>
+        <p class="card-text">El compost y la tierra ofrecen una base fértil, mientras que el fertilizante potencia el crecimiento.</p>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Viola.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Viola</h5>
+        <p class="card-text">Es una planta preciosa, especialmente durante el otoño cuando sus flores brotan.</p>
+      </div>
+    </div>
+  </a>
+</div>
+ <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Frutilla.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Frutilla</h5>
+                <p class="card-text">Su atractivo principal son sus frutos, tan dulces y vistosos como los conocemos.</p>
+            </div>
+    </div>
+  </a>
+</div>
+        <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/PrímulaObcónica.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Prímula Obcónica</h5>
+                <p class="card-text">Es una planta perfecta para dar color a nuestros balcones y ventanas.</p>
+            </div>
+    </div>
+  </a>
+</div>
+    <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Macetas/Macetas Esfera.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Macetas Esfera</h5>
+                <p class="card-text">Hermosa maceta para interiores pequeña pero llamativa.</p>
+            </div>
+    </div>
+  </a>
+</div>
+    <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Caléndula.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Caléndula</h5>
+                <p class="card-text">Es una planta resistente y con impresionantes flores de colores muy vivos.</p>
+            </div>
+    </div>
+  </a>
+</div>
+   <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Macetas/Plato1.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+       <h5 class="card-title">Platos</h5>
+                <p class="card-text">Son perfectos para evitar que el agua que drena de la maceta ensucie el suelo.</p>
+            </div>
+    </div>
+  </a>
+</div>
+    <div class="col">
+  <a href="../Producto/Producto.html" class="text-decoration-none text-dark">
+    <div class="card product-card h-100">
+      <img src="../Imagen/Plantas/Malvon.png" class="card-img-top" alt="Planta Conejito">
+      <div class="card-body">
+        <h5 class="card-title">Conejito</h5>
+        <p class="card-text">Popular entre los argentinos por su belleza en la punta de sus petalos.</p>
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+</section>
+<!-- ------------------------------------------Productos------------------------------------------- -->
+  </main>
+
+<!-- ------------------------------------------Footer------------------------------------------- -->
+  <footer class="text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-5 g-4">
+
+        <div class="col">
+          <h6 class="text-uppercase fw-bold">Terminos y condiciones</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Politicas de la compania</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h6 class="text-uppercase fw-bold">Sumate a la comunidad</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h6 class="text-uppercase fw-bold">Donde encontrarnos</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Bolivia 5100, CABA</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h6 class="text-uppercase fw-bold">Ayuda</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Botón de arrepentimiento</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h6 class="text-uppercase fw-bold">Acerca de nosotros</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none">Propósito</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Noticias</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 text-white-50">© 2025 Hierbas Felices. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end">
+          <a href="https://www.facebook.com/riverplateoficial/?locale=es_LA" class="text-white-50 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="" class="text-white-50 me-3"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/matematica_santiago_fiore/" class="text-white-50 me-3"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- ------------------------------------------Footer------------------------------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

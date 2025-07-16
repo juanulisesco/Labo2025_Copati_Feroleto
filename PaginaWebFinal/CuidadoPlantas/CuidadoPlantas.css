@@ -1,0 +1,109 @@
+  header{
+  background-color: #fafafa;
+  }
+
+  .LogoHeader {
+    width: 60px;
+    border-radius: 10px;
+  }
+
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  .dropdown-menu{
+    background-color: #fafafa;
+  }
+
+  .busc{
+    border-color: rgb(213, 241, 213);
+  }
+
+  .btn-success{
+    margin: 10px;
+  }
+  
+  .btn-success:hover{
+    background-color: white;
+    color: #198574;
+  }
+
+  .btn-outline-success{
+    border-color: rgb(0, 94, 0);
+    color: rgb(0, 94, 0);
+  }
+
+  .btn-outline-success:hover{
+    background-color: rgb(0, 94, 0);
+  }
+
+  footer{
+    background-color: #082200;
+  }
+
+  footer h6 {
+  margin-bottom: 1rem;
+}
+
+footer a:hover {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background: #e3f2dd;
+    margin: 0;
+    padding: 20px;
+    color: #2e4a1f;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .description {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+    line-height: 1.5;
+    background: #d8ecd0;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(46, 74, 31, 0.2);
+  }
+  .papa {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f6f9f4;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(46, 74, 31, 0.15);
+  }
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1px solid #a4c27a;
+    border-radius: 5px;
+    font-size: 1em;
+  } 
+  button:hover {
+    background-color: #517923;
+  }

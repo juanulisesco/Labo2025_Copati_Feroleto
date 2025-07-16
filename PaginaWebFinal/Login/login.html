@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../Index/style.css" />
+  <link rel="shortcut icon" href="../Imagen/Logo.jpg" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+
+<!-- -------------------------------------------Navbar--------------------------------- -->
+  <nav class="navbar navbar-expand-lg navbar-bordered bg-white py-3 mb-5">
+    <div class="container d-flex justify-content-center">
+      <a href="../Index/index.html" class="navbar-brand mx-auto">
+        <img src="../Imagen/Logo.jpg" alt="Logo marca" class="LogoHeader" />
+      </a>
+    </div>
+  </nav>
+<!-- -------------------------------------------Navbar--------------------------------- -->
+
+<main>
+<!-- -------------------------------------------Contenedor--------------------------------- -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <section class="col-12 col-sm-10 col-md-6 col-lg-4">
+          <div class="login-box bg-white border rounded shadow-sm p-4">
+            <h1 class="h3 mb-4 fw-bold text-center">Iniciar Sesión</h1>
+            <form id="loginForm" novalidate>
+              <div class="mb-4 border-bottom pb-3">
+                <label for="loginEmail" class="form-label fw-semibold">Email</label>
+                <input 
+                  type="email" 
+                  id="loginEmail" 
+                  class="form-control form-control-lg" 
+                  placeholder="tuemail@ejemplo.com" 
+                  required
+                  autocomplete="email"
+                />
+                <div class="invalid-feedback">
+                  Por favor ingresa un email válido.
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="loginPassword" class="form-label fw-semibold">Contraseña</label>
+                <input 
+                  type="password" 
+                  id="loginPassword" 
+                  class="form-control form-control-lg" 
+                  placeholder="••••••••••" 
+                  required 
+                  autocomplete="current-password"
+                />
+                <div class="invalid-feedback">Por favor ingresa tu contraseña.</div>
+              </div>
+              <button type="submit" class="btn btn-black w-100 mb-3">Entrar</button>
+              <p class="text-center small text-muted">¿No tienes cuenta? <a href="../Signup/signup.html" class="text-primary text-decoration-none fw-semibold">Registrate</a>
+              </p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+<!-- -------------------------------------------Contenedor--------------------------------- -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
