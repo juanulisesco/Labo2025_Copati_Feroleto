@@ -1,0 +1,18 @@
+/* Logo */
+.LogoHeader {
+    width: 60px;
+    border-radius: 10px;
+  }
+  
+  /* Hover en productos */
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+
+  }
+  

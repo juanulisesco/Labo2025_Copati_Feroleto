@@ -38,6 +38,14 @@ public class Persona {
         this.apellido= apellido;
     }
 
+    public Persona(String nombre, String apellido, String direccion) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.apellido= apellido;
+        this.edad=10;
+        this.fechaNacimiento= new Fecha();
+    }
+
     public String getNombre() {
 
         return this.nombre;
