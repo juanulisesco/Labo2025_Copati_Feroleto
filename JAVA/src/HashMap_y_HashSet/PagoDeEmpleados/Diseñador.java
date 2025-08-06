@@ -4,5 +4,5 @@ public class Diseñador{
 
     private TipoDiseñador tipo;
     private double comision;
-    
+
 }
