@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f016f198-8b31-47f0-b9c5-e5e4debf99ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/Control_Altura_Peso/Humano.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/PagoDeEmpleados/Creativo_Sin_Limites.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/PagoDeEmpleados/Proyecto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/Control_Altura_Peso/Registro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/PagoDeEmpleados/Diseñador.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/PagoDeEmpleados/Diseñador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/PagoDeEmpleados/TipoDiseñador.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/PagoDeEmpleados/TipoDiseñador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/Control_Altura_Peso/Humano.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/HashMap_y_HashSet/Control_Altura_Peso/Humano.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
