@@ -60,15 +60,15 @@ public class Mundo {
 
             }
         }
-        return co;
+        return c;
     }
     public Continente ContMenos() {
         int total = 0;
         Continente co = new Continente();
         for (Continente cont : continentes) {
-            if (cont.calcularPobla() < total) {
+            if (cont.cantPoblacion() < total) {
                 co = cont;
-                total = co.calcularPobla();
+                total = co.cantPoblacion();
 
             }
         }

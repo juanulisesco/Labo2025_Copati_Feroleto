@@ -1,4 +1,4 @@
-package objetos;
+/*package objetos;
 
 public class Clothing
 
@@ -71,3 +71,4 @@ public class Clothing
                 }
         }
 }
+*/

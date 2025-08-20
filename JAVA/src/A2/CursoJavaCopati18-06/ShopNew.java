@@ -1,4 +1,4 @@
-package objetos;
+/*package objetos;
 import personas.Customer;
 import objetos.Clothing;
 public class Shop
@@ -46,3 +46,4 @@ public class Shop
 
         }
     }
+*/

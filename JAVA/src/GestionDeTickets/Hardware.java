@@ -1,4 +1,4 @@
-package GestionDeTickets;
+/*package GestionDeTickets;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -50,3 +50,4 @@ public class Hardware extends Ticket {
         }
     }
 }
+*/

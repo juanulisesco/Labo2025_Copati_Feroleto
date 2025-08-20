@@ -1,4 +1,4 @@
-package Curso;
+/*package Curso;
 
 public class ShopApp {
     public static void main(String[] args) {
@@ -35,3 +35,4 @@ public class ShopApp {
         }
     }
 }
+*/

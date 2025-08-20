@@ -1,4 +1,4 @@
-package objetos;
+/*package objetos;
 import personas.Customer;
 import objetos.Clothing;
 public class Shop
@@ -65,3 +65,4 @@ public class Shop
             System.out.println("El total es="+ c1.getTotalClothingCost());
         }
 }
+*/

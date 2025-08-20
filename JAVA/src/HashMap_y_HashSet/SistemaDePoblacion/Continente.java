@@ -18,11 +18,13 @@ public class Continente extends Lugar {
         this.paises = paises;
     }
 
+
     int cantPoblacion(){
         int pobla=0;
         for(Pais pa : paises){
             pobla= pa.cantPoblacion();
         }
         return pobla;
+
     }
 }

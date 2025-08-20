@@ -1,4 +1,4 @@
-package Curso;
+/*package Curso;
 
 public class Customer {
     String nombre;
@@ -69,3 +69,4 @@ public class Customer {
     }
 
 }
+*/

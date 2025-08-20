@@ -1,4 +1,4 @@
-package personas;
+/*package personas;
 
 import objetos.Clothing;
 
@@ -59,7 +59,7 @@ public class Customer
     }
     public void setSize(int mesurement){
         switch(mesurement){
-            case 1,2,3:
+            case 1, 2, 3:
                 size = 's';
                 break;
                 case 4, 5, 6:
@@ -90,3 +90,4 @@ public class Customer
           
         }
     }
+*/
