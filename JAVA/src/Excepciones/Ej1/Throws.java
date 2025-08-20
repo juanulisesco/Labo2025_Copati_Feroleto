@@ -1,4 +1,4 @@
-package Exepciones.Ejericio1FragmentosCodigos;
+package Excepciones.Ej1;
 
 public class Throws extends Exception{
     public static int nulo(String nombre) throws Exception{

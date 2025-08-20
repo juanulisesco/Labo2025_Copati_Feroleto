@@ -1,4 +1,4 @@
-package Exepciones.Ejericio1FragmentosCodigos;
+package Excepciones.Ej1;
 
 public class Throw {
     public static void nulo(){

@@ -1,4 +1,4 @@
-package Exepciones.Ejericio1FragmentosCodigos;
+package Excepciones.Ej1;
 
 public class TryCatch {
     public static void main(String[] args) {

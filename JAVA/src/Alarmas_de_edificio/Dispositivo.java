@@ -1,58 +1,41 @@
 package Alarmas_de_edificio;
 import Clase_3.Fecha;
 import Unidad_4.Estado.Estados;;
+import java.time.LocalDate;
 
-public class Dispositivo {
-    private Estados estado;
-    private double medida;
-    private double umbralI ;
-    private Fecha añoAdquisicion;
+public class Dispositivo extends Sensor{
+    private Detector_de_humo humo;
+    private Sensor_de_temperatura temperatura;
+    private Sensor_de_presion presion;
 
-    public Dispositivo(Estados estado, double medida, double umbralI , Fecha añoAdquisicion){
-        this.estado= estado;
-        this.medida=medida;
-        this.umbralI=umbralI;
-        this.añoAdquisicion= new Fecha();
+    public Dispositivo(boolean estado, double medida, LocalDate adquisicion, double umbralInicial, Detector_de_humo humo, Sensor_de_temperatura temperatura, Sensor_de_presion presion) {
+        super(estado, medida, adquisicion, umbralInicial);
+        this.humo = humo;
+        this.temperatura = temperatura;
+        this.presion = presion;
     }
 
-    public Dispositivo(){
-        this.estado=estado  ;
-        this.medida= 4.2;
-        this.umbralI= 2.1;
-        this.añoAdquisicion= new Fecha(12, 10,2007);
+    public Detector_de_humo getHumo() {
+        return humo;
     }
 
-    public Estados isEstado() {
-        return estado;
+    public void setHumo(Detector_de_humo humo) {
+        this.humo = humo;
     }
 
-    public double getMedida() {
-        return medida;
+    public Sensor_de_temperatura getTemperatura() {
+        return temperatura;
     }
 
-    public double getUmbralI() {
-        return umbralI;
+    public void setTemperatura(Sensor_de_temperatura temperatura) {
+        this.temperatura = temperatura;
     }
 
-    public Fecha getAñoAdquisicion() {
-        return añoAdquisicion;
+    public Sensor_de_presion getPresion() {
+        return presion;
     }
 
-    public void setEstado(Estados estado) {
-        this.estado = estado;
+    public void setPresion(Sensor_de_presion presion) {
+        this.presion = presion;
     }
-
-    public void setMedida(int medida) {
-        this.medida = medida;
-    }
-
-    public void setUmbralI(int umbralI) {
-        this.umbralI = umbralI;
-    }
-
-    public void setAñoAdquisicion(Fecha añoAdquisicion) {
-        this.añoAdquisicion = añoAdquisicion;
-    }
-
 }
-
