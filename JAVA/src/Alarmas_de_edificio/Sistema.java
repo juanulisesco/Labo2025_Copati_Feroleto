@@ -1,7 +1,8 @@
 package Alarmas_de_edificio;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Sistema {
+public class Sistema extends Exception{
     public ArrayList<Sensor> sensores;
 
     public Sistema(ArrayList<Sensor> sensores) {
@@ -43,6 +44,17 @@ public class Sistema {
     public static void main(String[] args) {
         Sistema a1 = new Sistema();
         a1.comparar();
-
+        int numero= 0;
+        try {
+            System.out.println("Ingrese el numero del sensor que desee");
+            for (int i = 0; i < a1.sensores.size(); i++) {
+                System.out.println(i + ")" + a1.sensores.get(i).getEstado());
+            }
+            Scanner e = new Scanner(System.in);
+            numero = e.nextInt();
+        }
+        catch(ArrayIndexOutOfBoundsException exception){
+            System.out.println("Ocurrio alguna excepcion");
+        }
     }
 }

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f016f198-8b31-47f0-b9c5-e5e4debf99ba" name="Changes" comment="" />
+    <list default="true" id="f016f198-8b31-47f0-b9c5-e5e4debf99ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Alarmas_de_edificio/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Alarmas_de_edificio/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA/Arrays/CD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA/Arrays/Libro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA/Clase_3/Cafetera" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA/Clase_3/Cancion.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,12 +45,15 @@
     &quot;Application.CD.executor&quot;: &quot;Run&quot;,
     &quot;Application.Circulo.executor&quot;: &quot;Run&quot;,
     &quot;Application.Coche.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ejercicio1FragmentoCodigo.executor&quot;: &quot;Run&quot;,
     &quot;Application.Fecha.executor&quot;: &quot;Run&quot;,
     &quot;Application.IngresarDatos.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.NumeroMayor.executor&quot;: &quot;Run&quot;,
     &quot;Application.Persona.executor&quot;: &quot;Run&quot;,
     &quot;Application.Rectangulo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Throw.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Throws.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -61,7 +71,7 @@
       <recent name="$PROJECT_DIR$/JAVA/src/Curso" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CD">
+  <component name="RunManager" selected="Application.Throws">
     <configuration name="CD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Musica.CD" />
       <module name="JAVA" />
@@ -101,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Persona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Clase_2.Persona" />
+    <configuration name="Throw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exepciones.Ejericio1FragmentosCodigos.Throw" />
       <module name="JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Figuras.*" />
+          <option name="PATTERN" value="Exepciones.Ejericio1FragmentosCodigos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rectangulo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Figuras.Rectangulo" />
+    <configuration name="Throws" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exepciones.Ejericio1FragmentosCodigos.Throws" />
       <module name="JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Figuras.*" />
+          <option name="PATTERN" value="Exepciones.Ejericio1FragmentosCodigos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Vehiculo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sistema_De_Vehiculos.Vehiculo" />
+    <configuration name="TryCatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exepciones.Ejericio1FragmentosCodigos.TryCatch" />
       <module name="JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Figuras.*" />
+          <option name="PATTERN" value="Exepciones.Ejericio1FragmentosCodigos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Throws" />
+        <item itemvalue="Application.Throw" />
+        <item itemvalue="Application.TryCatch" />
         <item itemvalue="Application.CD" />
         <item itemvalue="Application.Fecha" />
-        <item itemvalue="Application.Vehiculo" />
-        <item itemvalue="Application.Persona" />
-        <item itemvalue="Application.Rectangulo" />
       </list>
     </recent_temporary>
   </component>
