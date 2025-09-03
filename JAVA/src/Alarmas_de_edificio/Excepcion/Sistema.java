@@ -1,4 +1,6 @@
-package Alarmas_de_edificio;
+package Alarmas_de_edificio.Excepcion;
+import Alarmas_de_edificio.*;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

@@ -15,6 +15,9 @@ public class Dispositivo extends Sensor{
         this.presion = presion;
     }
 
+    public Dispositivo() {
+    }
+
     public Detector_de_humo getHumo() {
         return humo;
     }

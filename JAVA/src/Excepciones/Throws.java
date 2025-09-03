@@ -1,4 +1,4 @@
-package Excepciones.Ej1;
+package Excepciones;
 
 public class Throws extends Exception{
     public static int nulo(String nombre) throws Exception{

@@ -1,4 +1,4 @@
-package Excepciones.Ej1;
+package Excepciones;
 
 public class TryCatch {
     public static void main(String[] args) {

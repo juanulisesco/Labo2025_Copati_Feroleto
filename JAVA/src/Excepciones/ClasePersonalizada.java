@@ -1,4 +1,4 @@
-package Excepciones.Ej1;
+package Excepciones;
 
 public class ClasePersonalizada extends Exception {
     public ClasePersonalizada(String mensaje) {
