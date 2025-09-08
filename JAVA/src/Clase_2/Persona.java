@@ -8,6 +8,7 @@ public class Persona {
     private Fecha fechaNacimiento;
     private int edad;
     private String direccion;
+    private int dni;
 
     public Persona() {
         this.nombre = "Selene";
@@ -15,6 +16,14 @@ public class Persona {
         this.fechaNacimiento= new Fecha(10, 10, 2020);
         this.edad = 17;
         this.direccion = "Av Mosconi 7000";
+    }
+    public Persona (String nombre, String apellido, Fecha fechaNacimiento, int dni,
+                    String direccion){
+        this.nombre = nombre;
+        this.apellido= apellido;
+        this.fechaNacimiento= fechaNacimiento;
+        this.dni= dni;
+        this.direccion= direccion;
     }
 
     public Persona(String nombre, int edad, String apellido ) {

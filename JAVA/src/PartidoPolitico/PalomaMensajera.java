@@ -1,7 +1,5 @@
 package PartidoPolitico;
 
-import Alarmas_de_edificio.Dispositivo;
-
 public abstract class PalomaMensajera extends Ave implements Campania {
     private boolean volar ;
 
@@ -21,5 +19,12 @@ public abstract class PalomaMensajera extends Ave implements Campania {
 
     public void setVolar(boolean volar) {
         this.volar = true;
+    }
+
+    @Override
+    public void hacerCampania(String msg){
+        if(volar){
+            System.out.println("Lanzando un papelito que dice:" + msg );
+        }
     }
 }

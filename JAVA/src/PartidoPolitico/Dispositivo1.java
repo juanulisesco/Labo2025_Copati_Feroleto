@@ -6,11 +6,13 @@ public class Dispositivo1 {
     private int numSerie;
     private Persona fabricante;
     private String modelo;
+    private boolean prendido;
 
-    public Dispositivo1(int numSerie, Persona fabricante, String modelo) {
+    public Dispositivo1(int numSerie, Persona fabricante, String modelo, boolean prendido) {
         this.numSerie = numSerie;
         this.fabricante = fabricante;
         this.modelo = modelo;
+        this.prendido= prendido;
     }
 
     public Dispositivo1() {
@@ -41,5 +43,13 @@ public class Dispositivo1 {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public boolean isPrendido() {
+        return prendido;
+    }
+
+    public void setPrendido(boolean prendido) {
+        this.prendido = prendido;
     }
 }

@@ -1,4 +1,5 @@
 package PartidoPolitico;
 
-public interface Campania {
+public interface Campania  {
+    void hacerCampania(String msg);
 }
